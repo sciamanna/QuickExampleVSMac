@@ -2,9 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:App123" x:Class="App123.MainPage">
     <StackLayout>
         <!-- Place new controls here -->
-        <Entry Placeholder="Please enter your name"/>
-        <Button Text="Click me"/>
-        <Label Text="Hello!" 
+        <Entry x:Name="nameEntry"
+               Placeholder="Please enter your name"/>
+        <Button Text="Click me"
+                Clicked="Handle_Clicked"/>
+        <Label x:Name="greetingLabel"
+               Text="Hello!" 
                FontSize="25"/>
     </StackLayout>
 </ContentPage>
