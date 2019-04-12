@@ -6,6 +6,7 @@ namespace App123
 {
     public partial class App : Application
     {
+        # The main db path
         public string DatabasePath;
     
         public App()
