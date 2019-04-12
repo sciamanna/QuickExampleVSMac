@@ -6,23 +6,9 @@ namespace App123
 {
     public partial class App : Application
     {
-        # The main db path
-        public string DatabasePath;
-    
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new MainPage());
-        }
-        
-        public App(string databasePath)
-        {
-            # this constructor should be used when implementing SQLite
-            
-            InitializeComponent();
-            
-            DatabasePath = databasePath;
 
             MainPage = new NavigationPage(new MainPage());
         }
