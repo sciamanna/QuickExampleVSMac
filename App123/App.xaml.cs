@@ -18,6 +18,8 @@ namespace App123
         
         public App(string databasePath)
         {
+            # this constructor should be used when implementing SQLite
+            
             InitializeComponent();
             
             DatabasePath = databasePath;
