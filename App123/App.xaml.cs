@@ -12,6 +12,12 @@ namespace App123
 
             MainPage = new NavigationPage(new MainPage());
         }
+        public App(String databasePath)
+        {
+            InitializeComponent();
+
+            MainPage = new NavigationPage(new MainPage());
+        }
 
         protected override void OnStart()
         {
